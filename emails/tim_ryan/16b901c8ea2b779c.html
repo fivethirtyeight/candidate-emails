@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--?xml encoding="UTF-8"??--><html lang="en"><!--HEADER --><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="”x-apple-disable-message-reformatting”"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><title></title><style type="text/css">
+	/* CLIENT-SPECIFIC STYLES */
+	body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: futra-pt, arial, sans-serif;}
+	table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+	img { -ms-interpolation-mode: bicubic; }
+		b{font-weight: 700;
+		font-family: avenir, sans-serif;}
+
+	 /* RESET STYLES */
+	img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+	body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+	/* iOS BLUE LINKS */
+	a[x-apple-data-detectors] {
+	    color: inherit !important;
+	    text-decoration: none !important;
+	    font-size: inherit !important;
+	    font-family: inherit !important;
+	    font-weight: inherit !important;
+	    line-height: inherit !important;
+	}
+
+	/* Generic Hover Class*/
+
+	 .link-hover-class:hover, .link-hover-class > *:hover{ color: blue !important;}
+
+	/* Hover Profiles*/
+	
+	.Red-btn:hover {
+		background: #df2847 !important;
+		-webkit-border-radius:inherit;
+		border-radius:inherit;
+	}
+	.Red-link:hover, .Red-link > *:hover {
+		color: #df2847 !important;
+	}
+	.Green-btn:hover {
+		background: #47b07f !important;
+		-webkit-border-radius:inherit;
+		border-radius:inherit;
+	}
+	.Green-link:hover, .Green-link > *:hover {
+		color: #47b07f !important;
+	}
+
+	/* Hover Toggle Classes */
+
+	.link-hover:hover { text-decoration: none; }
+
+	 /* STYLES */
+
+	.gmail-show {
+	    height: auto !important;
+	    width: auto !important;
+	    max-width: none !important;
+	    max-height: none !important;
+	    overflow: auto !important;
+	    visibility: visible !important;
+	    display: block !important;
+	}
+
+	/* GMAIL TARGETTING AT A HIGHER BREAKPOINT */
+	@media screen and (max-width: 1200px) {
+	    u ~ div .responsive-topbox-item-600 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    u ~ div .mobile-hide-topbox-item-600 {
+		display: none !important;
+	    }
+	    u ~ div .mobile-topbox-padding-0-600 {
+		padding: 0px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-600 {
+		padding: 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-600 {
+		padding: 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-600 {
+		padding: 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-600 {
+		padding: 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-top-item-600 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-top-item-600 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-top-item-600 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-top-item-600 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-bottom-item-600 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-bottom-item-600 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-bottom-item-600 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-bottom-item-600 {
+		padding: 10px 20px 20px 20px !important;
+	    }
+	    u ~ div .responsive-topbox-item-480 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    u ~ div .mobile-hide-topbox-item-480 {
+		display: none !important;
+	    }
+	    u ~ div .mobile-topbox-padding-0-480 {
+		padding: 0px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-480 {
+		padding: 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-480 {
+		padding: 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-480 {
+		padding: 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-480 {
+		padding: 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-top-item-480 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-top-item-480 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-top-item-480 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-top-item-480 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-bottom-item-480 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-bottom-item-480 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-bottom-item-480 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-bottom-item-480 {
+		padding: 10px 20px 20px 20px !important;
+		}
+	}
+
+/* WEBKIT TARGETING MEDIA QUERY / WEBKIT STYLES */
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+
+	    /* WEBKIT HIDE/SHOW MAGIC */
+	    .webkit-show {
+		height: auto !important;
+		width: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+		overflow: auto !important;
+		visibility: visible !important;
+		display: block !important;
+	    }
+
+	    .webkit-hide {
+		display: none !important;
+	    }
+
+	    .ptop50 {
+		padding-top: 50px !important;
+	    }
+
+	    #font-weight-normal {
+		font-weight: normal !important;
+	    }
+
+	}
+
+	@media screen and (max-width: 800px) {
+	    .img-max {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	    }
+
+	    .full-width {
+		max-width: 100% !important;
+	    }
+	}
+
+	/* RESPONSIVE STUFF */
+	@media screen and (max-width: 600px) {
+	    .responsive-topbox-item-600 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    .mobile-hide-topbox-item-600 {
+		display: none !important;
+	    }
+	    .mobile-topbox-padding-0-600 {
+		padding: 0px !important;
+	    }
+	    .mobile-topbox-padding-5-600 {
+		padding: 5px !important;
+	    }
+	    .mobile-topbox-padding-10-600 {
+		padding: 10px !important;
+	    }
+	    .mobile-topbox-padding-15-600 {
+		padding: 15px !important;
+	    }
+	    .mobile-topbox-padding-20-600 {
+		padding: 20px !important;
+	    }
+	    .mobile-topbox-padding-5-top-item-600 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-top-item-600 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-top-item-600 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-top-item-600 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    .mobile-topbox-padding-5-bottom-item-600 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-bottom-item-600 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-bottom-item-600 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-bottom-item-600 {
+		padding: 10px 20px 20px 20px !important;
+	    }
+	    .responsive-table {
+		width: 100% !important;
+	    }
+	    .responsive-table-button {
+		width: 100% !important;
+		min-width: 100% !important;
+		max-width: 100% !important;
+	    }
+	    .mobile-text {
+		font-size: 24px !important;
+		line-height: 26px !important;
+	    }
+	    .mobile-font-14 {
+		font-size: 14px !important;
+		line-height: 14px !important;
+	    }
+	    .mobile-font-16 {
+		font-size: 16px !important;
+		line-height: 16px !important;
+	    }
+	    .mobile-font-18 {
+		font-size: 18px !important;
+		line-height: 18px !important;
+	    }
+	    .mobile-font-20 {
+		font-size: 20px !important;
+		line-height: 20px !important;
+	    }
+	    .mobile-font-22 {
+		font-size: 22px !important;
+		line-height: 22px !important;
+	    }
+	    .mobile-font-25 {
+		font-size: 25px !important;
+		line-height: 25px !important;
+	    }
+	    .mobile-font-30 {
+		font-size: 30px !important;
+		line-height: 30px !important;
+	    }
+	    .mobile-font-35 {
+		font-size: 35px !important;
+		line-height: 35px !important;
+	    }
+	    .mobile-font-40 {
+		font-size: 40px !important;
+		line-height: 40px !important;
+	    }
+	    #mobile {
+		font-size: 13px !important;
+		letter-spacing: 0px;
+		padding: 10px !important;
+	    }
+	    .mobile-footer-logo {
+		max-width: 50% !important;
+	    }
+	    .mobile {
+		font-size: 13px !important;
+		letter-spacing: 0px;
+		padding: 10px !important;
+	    }
+	
+	}
+
+	@media screen and (max-width: 480px) {
+	    .responsive-topbox-item-480 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    .mobile-hide-topbox-item-480 {
+		display: none !important;
+	    }
+	    .mobile-topbox-padding-0-480 {
+		padding: 0px !important;
+	    }
+	    .mobile-topbox-padding-5-480 {
+		padding: 5px !important;
+	    }
+	    .mobile-topbox-padding-10-480 {
+		padding: 10px !important;
+	    }
+	    .mobile-topbox-padding-15-480 {
+		padding: 15px !important;
+	    }
+	    .mobile-topbox-padding-20-480 {
+		padding: 20px !important;
+	    }
+	    .mobile-topbox-padding-5-top-item-480 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-top-item-480 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-top-item-480 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-top-item-480 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    .mobile-topbox-padding-5-bottom-item-480 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-bottom-item-480 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-bottom-item-480 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-bottom-item-480 {
+		padding: 10px 20px 20px 20px !important;
+	    }
+	    .mobile-hide {
+		display: none !important;
+	    }
+	    #mobile-hide {
+		display: none !important;
+	    }
+	    .headline {
+		font-size: 30px !important;
+		line-height: 36px !important;
+	    }
+	    .sup {
+		font-size: 18px !important;
+		line-height: 18px !important;
+	    }
+	    .logo {
+		width: 85px !important;
+		height: auto !important;
+	    }
+	    .bg {
+		padding-top: 30px !important;
+	    }
+		
+	}
+
+	/* ANDROID CENTER FIX */
+	div[style*="margin: 16px 0;"] { margin: 0 !important; }
+    </style></head><body style="padding:0">
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="center" bgcolor="#ffffff" style="padding: 5px 5% 50px 5%;">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td align="center" valign="top" width="100%">
+			<![endif]-->
+			<table border="0" cellpadding="0" cellspacing="0" style="max-width: 600px" width="100%"><tbody><tr><td>
+</td></tr><tr><td align="center" style="color: #000000; font-family: 'avenir', arial, sans-serif; font-size: 16px; line-height: 23px; padding: 0px 0 0 0;">
+		<a href="#" target="_blank">
+			<img alt="" src="http://d3fmzoduhotdlw.cloudfront.net/RyanT/EmailTemplate/TRLogoAB.png" style="padding-top:5px; padding-bottom:5px; width: 300px; max-width:50%" width="300"/></a>
+	</td>
+</tr><tr><td align="left" style="color: #000000; font-family: 'avenir', sans-serif;  font-size: 16px; line-height: 23px; padding: 10px 0 0 0; max-width:600px">
+<!--HEADER END --><div style="font-size:18px;">
+	 Team,<br/><br/>
+	For months now, we’ve been working towards tomorrow’s debate and in less than 36-hours Tim will finally take the stage!<br/><br/><strong>Qualifying for the debate was a huge accomplishment and we’re so proud that the strength of this grassroots movement pushed Tim over the finish line — but we can’t stop now.</strong><br/><br/><u><strong><a href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930f7/1537205992/VEsH/p/eyJKU1ZGYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZHYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVk1ZWE4wYm1GdFpTVWwiOiIiLCJKU1ZEYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVlRWRUZVUlY5QlFrSlNKU1U9IjoiTlkiLCJKU1ZhYVhBbEpRPT0iOiIxMDAzMSIsIkpTVklUMDFGVUVoUFRrVWxKUT09IjoiIiwiSlNWUFEwTlZVRUZVU1U5T0pTVT0iOiIiLCJKU1ZGVFZCTVQxbEZVaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" title="https://secure.actblue.com/contribute/page/tr-dnc-debate?refcode=TR_EM_FR_ACT_190625_2_2_T2&amp;amount=3&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=NY&amp;zip=10031&amp;phone=&amp;occupation=&amp;employer=&amp;recurring=1&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=1+-+We+have+to+keep+growing+this+grassroots+&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2">We have to keep growing this grassroots movement and that means asking you and all of Tim's supporters, if you can step up and chip in $3 right now so Tim gets onto the stage tomorrow night with your support.</a></strong></u><br/><br/>
+	Tim may not be the most “famous” candidate but I guarantee he’ll be the one to wow debate viewers.<br/><br/>
+	I’ve seen it happen time and again — his ability to connect with voters is what will win him this race.<br/><br/><a href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930f6/1537205992/VEsE/p/eyJKU1ZGYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZHYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVk1ZWE4wYm1GdFpTVWwiOiIiLCJKU1ZEYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVlRWRUZVUlY5QlFrSlNKU1U9IjoiTlkiLCJKU1ZhYVhBbEpRPT0iOiIxMDAzMSIsIkpTVklUMDFGVUVoUFRrVWxKUT09IjoiIiwiSlNWUFEwTlZVRUZVU1U5T0pTVT0iOiIiLCJKU1ZGVFZCTVQxbEZVaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" title="https://secure.actblue.com/contribute/page/tr-dnc-debate?refcode=TR_EM_FR_ACT_190625_2_2_T2&amp;amount=3&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=NY&amp;zip=10031&amp;phone=&amp;occupation=&amp;employer=&amp;recurring=1&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=2+-+Contribute+now+to+give+Tim+more+grassroo&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2"><u><strong>Contribute now to give Tim more grassroots momentum than anyone else on the stage tomorrow night. ➡</strong></u></a><br/><br/><center>
+		<em>If you’ve saved your payment information with ActBlue Express, we will immediately process your contribution to Tim Ryan for America when you click a button below. Otherwise, you will be directed to a donation page.</em>
+		<table align="center" cellpadding="0" cellspacing="10"><tbody><tr><td align="center" bgcolor="#12ABEA" min-height="40" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:#12ABEA; color: #FFFFFF; display: table-cell;" width="140">
+						<p>
+							<span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:16px;"><span style="font-size:16px;"><a data-form-type="" href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930f9/1537205992/VEsF/p/eyJKU1ZGYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZHYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVk1ZWE4wYm1GdFpTVWwiOiIiLCJKU1ZEYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVlRWRUZVUlY5QlFrSlNKU1U9IjoiTlkiLCJKU1ZhYVhBbEpRPT0iOiIxMDAzMSIsIkpTVklUMDFGVUVoUFRrVWxKUT09IjoiIiwiSlNWUFEwTlZVRUZVU1U5T0pTVT0iOiIiLCJKU1ZGVFZCTVQxbEZVaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" style="color: #FFFFFF; font-size: 18px; font-weight: bold; font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; text-decoration: none; line-height:20px; width:100%; display:inline-block" title="https://secure.actblue.com/contribute/page/tr-dnc-debate?refcode=TR_EM_FR_ACT_190625_2_2_T2&amp;amount=3&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=NY&amp;zip=10031&amp;phone=&amp;occupation=&amp;employer=&amp;express_lane=true&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=3+-+ask&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2">$3</a></span></span></span></span></span></span></span></p>
+					</td>
+					<td align="center" bgcolor="#12ABEA" min-height="40" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:#12ABEA; color: #FFFFFF; display: table-cell;" width="140">
+						<span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:16px;"><span style="font-size:16px;"><a data-form-type="" href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930f8/1537205992/VEsC/p/eyJKU1ZGYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZHYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVk1ZWE4wYm1GdFpTVWwiOiIiLCJKU1ZEYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVlRWRUZVUlY5QlFrSlNKU1U9IjoiTlkiLCJKU1ZhYVhBbEpRPT0iOiIxMDAzMSIsIkpTVklUMDFGVUVoUFRrVWxKUT09IjoiIiwiSlNWUFEwTlZVRUZVU1U5T0pTVT0iOiIiLCJKU1ZGVFZCTVQxbEZVaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMjUifQ==/" style="color: #FFFFFF; font-size: 18px; font-weight: bold; font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; text-decoration: none; line-height:20px; width:100%; display:inline-block" title="https://secure.actblue.com/contribute/page/tr-dnc-debate?refcode=TR_EM_FR_ACT_190625_2_2_T2&amp;amount=25&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=NY&amp;zip=10031&amp;phone=&amp;occupation=&amp;employer=&amp;express_lane=true&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=4+-+ask&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2">$25</a></span></span></span></span></span></span></span></td>
+					<td align="center" bgcolor="#12ABEA" min-height="40" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; border:#12ABEA; color: #FFFFFF; display: table-cell;" width="140">
+						<span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:18px;"><span style="font-size:16px;"><span style="font-size:16px;"><a data-form-type="" href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930fb/1537205992/VEsD/p/eyJKU1ZGYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZHYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVk1ZWE4wYm1GdFpTVWwiOiIiLCJKU1ZEYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVlRWRUZVUlY5QlFrSlNKU1U9IjoiTlkiLCJKU1ZhYVhBbEpRPT0iOiIxMDAzMSIsIkpTVklUMDFGVUVoUFRrVWxKUT09IjoiIiwiSlNWUFEwTlZVRUZVU1U5T0pTVT0iOiIiLCJKU1ZGVFZCTVQxbEZVaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMjUifQ==/" style="color: #FFFFFF; font-size: 18px; font-weight: bold; font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; text-decoration: none; line-height:20px; width:100%; display:inline-block" title="https://secure.actblue.com/contribute/page/tr-dnc-debate?refcode=TR_EM_FR_ACT_190625_2_2_T2&amp;amount=25&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=NY&amp;zip=10031&amp;phone=&amp;occupation=&amp;employer=&amp;recurring=1&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=5+-+Other&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2">Other</a></span></span></span></span></span></span></span></td>
+				</tr></tbody></table></center>
+	<br/>
+	Thanks!<br/>
+	Andrea<br/>
+	 </div>
+<p>
+	 </p><!--FOOTER -->
+
+					</td>
+				</tr></tbody></table><!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]--></td>
+	</tr><tr><td align="center" bgcolor="#021e2f" style="padding: 20px 5% 70px 5%; border-top: solid 2px #FFFFFF">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td align="center" valign="top" width="100%">
+			<![endif]-->
+			<table border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;" width="100%"><tbody><!-- START ADDRESS --><tr><td align="center" style="font-size: 14px; line-height: 18px; color:#9e9e9e;  padding-top: 15px; padding-bottom: 25px; font-family: avenir, arial, sans-serif;" valign="middle"><img arial="" avenir="" font-family:="" font-size:="" sans-serif="" src="https://nbicdn.s3.amazonaws.com/RyanT/EmailTemplate/FooterIcons.png" style="max-width:600px;&gt;&lt;span style=" width="100%"/></td>
+				</tr><!--  END ADDRESS --><!--  START PAID FOR --><tr><td align="center">
+						<div style="font-family: avenir, arial, sans-serif; border-color: #e4e9ee; border-style: solid; border-width: 1px; padding: 7px; width:90%; max-width:600px; font-size: 14px; line-height: 18px; color:#ffffff; font-family: avenir,    arial, sans-serif;">
+							<span style="font-family: avenir, arial, sans-serif; font-size: 14px;">Paid for by Tim Ryan for America</span>
+						</div>
+					</td>
+				</tr><!-- END PAID FOR --><!-- START BOTTOM TEXT --><tr><td align="center" style="font-size: 14px; line-height: 18px; color:#9e9e9e; padding-top: 25px; font-family: avenir, arial, sans-serif;">	 
+						<div style="width:100%; max-width:600px;" width="600"><span style="font-size: 12px; line-height: 125%; color: #000000; font-family: 'avenir', arial, sans-serif;"> <span style="color:#ffffff;">Contribute now to help Tim take his vision for our future across the United States! <a href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930fa/1537205992/VEsA/" style="color:#ffffff; font-family: avenir,verdana,sans-serif;" title="https://secure.actblue.com/donate/tr-emfooter?amount=5&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=6+-+Donate+now&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2"><strong>Donate now.</strong></a><br/><br/><b>We know email can be overwhelming, </b><br/>
+so if you’d like to receive only the most important updates, 
+you can join our email-lite list <a href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930fd/1537205992/VEsB/" style="color:#ffffff; font-family: avenir,   arial, sans-serif;" title="https://timryan.cp.bsd.net/page/s/receive-fewer-emails?utm_medium=email&amp;utm_source=timryan&amp;utm_content=7+-+here&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2">here</a>, or unsubscribe from all email by <a href="http://secure.timryanforamerica.com/page/m/d7a9f4b/548afc14/2131b721/dc930fc/1537205992/VEsO/p/eyJKU1ZQUWtaVlUwTkJWRVZFVWtWRFNWQkpSVTVVU1VRbEpRPT0iOiIyMTMxYjcyMSIsIkpTVlBRa1pWVTBOQlZFVkVUVUZKVEVsT1IxTkZUa1JKUkNVbCI6ImQ3YTlmNGIifQ==/" style="color:#ffffff; font-family: avenir,verdana,sans-serif;" title="https://secure.timryanforamerica.com/page/oneclickunsubscribe/2131b721/d7a9f4b?utm_medium=email&amp;utm_source=timryan&amp;utm_content=8+-++clicking+here&amp;utm_campaign=TR_EM_FR_ACT_190625_2_2_T2&amp;source=TR_EM_FR_ACT_190625_2_2_T2"> clicking here.</a><br/><br/><!-- CADILLAC BUTTON GROUP START --><center>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="max-width: 100%;" width="600"><tbody><tr><td align="center" style="padding: 5px;"><!-- START  BUTTON -->
+<table border="0" cellpadding="0" cellspacing="0" width="210"><tbody><tr><td></td>
+</tr></tbody></table><!-- END BUTTON --></td>
+</tr></tbody></table></center></span></span></div>
+					</td>
+				</tr><!-- END BOTTOM TEXT --></tbody></table><!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]--></td>
+	</tr></tbody></table><img height="1" src="http://secure.timryanforamerica.com/page/o/d7a9f4b/548afc14/2131b721/dc930f4/1537205992/open.gif" width="1"/>
+
+
+
+</body></html><!--FOOTER END -->

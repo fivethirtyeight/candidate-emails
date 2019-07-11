@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--?xml encoding="UTF-8"??--><html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Simple Transactional Email</title><style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+
+      body {
+        background-color: #ffffff;
+        font-family: Verdana, Geneva, sans-serif;
+        -webkit-font-smoothing: antialiased;
+
+        font-size: 16px;
+        line-height: 1.65;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 16px;
+          line-height: 1.65;
+          vertical-align: top; }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #ffffff;
+        width: 100%; }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 20px auto !important;
+        /* makes it centered */
+        max-width: 600px;
+   }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 600px; }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        width: 100%; }
+
+      .wrapper {
+        box-sizing: border-box; }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+   
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #39393b;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 30px; }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+
+      p,
+      ul,
+      ol {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px;
+        color: #39393b; }
+        p {
+          line-height: 1.45;
+        }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+
+      a {
+        color: #005080;
+        text-decoration: underline;
+font-weight: bold; 
+}
+
+a:hover {
+  color: #77b9e7;
+}
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      table[class=body] .btn table {
+        margin: 0 auto;
+      }
+
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #5c8ab6;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #5c8ab6;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+
+      .btn-primary table td {
+        background-color: #5c8ab6; }
+
+      .btn-primary a {
+        background-color: #5c8ab6;
+        border-color: #5c8ab6;
+        color: #ffffff; }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+
+      .first {
+        margin-top: 0; }
+
+      .align-center {
+        text-align: center; }
+
+      .align-right {
+        text-align: right; }
+
+      .align-left {
+        text-align: left; }
+
+      .clear {
+        clear: both; }
+
+      .mt0 {
+        margin-top: 0; }
+
+      .mb0 {
+        margin-bottom: 0; }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+
+      .powered-by a {
+        text-decoration: none; }
+
+      hr {
+        border: 0;
+        border-bottom: 2px solid #e7e7e7;
+        margin: 20px 0; }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=main] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=main] p,
+        table[class=main] ul,
+        table[class=main] ol,
+        table[class=main] td,
+        table[class=main] span,
+        table[class=main] a {
+          font-size: 19px !important; }
+
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }
+}
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+
+    </style></head><body class="">
+
+<table bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" class="body" height="100%" width="100%"><tbody><tr><td align="center" class="container" valign="top"><!-- 640px container (white background) --><!--[if mso]>
+                                    <table width="640" cellpadding="0" cellspacing="0" style="width: 640px;">
+                                        <tr><td width="640" style="width: 640px;" valign="top"><![endif]-->
+        <div class="content">
+
+      <table cellpadding="0" cellspacing="0" class="main" style="width:100%; max-width:640px;" width="600"><!-- Start logo row --><tbody><tr><td class="wrapper" style="padding-left: 20px; padding-right: 20px; padding-bottom: 40px">
+ <center>
+                        <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/2352323f/1439390494/VEsH/" title="https://www.johndelaney.com/?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=1+-+++&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns">  <img align="center" src="https://go.johndelaney.com/page/-/Delaney-for-President_Logo_Horizontal_Color_High_300px.png" style="margin-bottom: 25px" width="250"/></a>
+                        </center><div style="display: none; max-height: 0px; overflow: hidden;">
+	 ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ </div>
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; ">
+	Hey there --<br/><br/>
+	Yesterday, we reached out asking for your help with to fill out our Debate Survey. We’d love if you could take a minute to share your priorities with us!<br/><br/><strong>With just under a week before John heads to the debate stage in Miami, we want to hear from you: Which issues would you like to hear John talk about on the debate stage?</strong></p>
+<center>
+	<table bgcolor="f8f8f8" cellspacing="0" style="border: solid 3px #84b8e3 ;max-width: 450px; width:100%; "><tbody><tr><td bgcolor="f8f8f8" style="padding: 15px 10px 20px 10px; text-align: center;">
+					<p style="font-family: Verdana, Geneva, sans-serif; font-size: 18px; font-weight: normal; margin-bottom: 15px; line-height: 1.45; color: #39393b; ">
+						<strong>Debate Survey</strong><br/><a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/2352323e/1439390494/VEsE/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAyMyJ9/" style="color:#39393b; font-weight: normal; text-decoration: none; font-size: 16px; line-height: 1.45" title="https://go.johndelaney.com/Debate-Survey?source=em_surv_2019.04.08_e1_td_issues_all&amp;email=****@****.****&amp;zip=10023&amp;email=****@****.****&amp;zip=10023&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=2+-+Name+NAMEemailEstimated+Time+to+Complete&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns"><strong>Name:</strong> ****@****.****<br/><strong>Estimated Time to Complete:</strong> 1.6 minutes</a></p>
+					<table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto; width: 200px" width="200"><tbody><tr><td align="center" bgcolor="EE283B" style="width: 200px; min-width:180px; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; font-family: Verdana, Geneva, sans-serif;">
+									<a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523239/1439390494/VEsF/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAyMyJ9/" style="padding: 10px 12px; mso-padding-alt: 9px 12px; min-width:180px; max-width:200px; display: block;text-decoration: none;border:0; text-align: center; text-transform:uppercase; font-weight: 600;font-size: 16px; color: #ffffff; background: #EE283B; -moz-border-radius: 0px; -webkit-border-radius: 0px; border-radius: 0px; mso-line-height-rule: exactly; line-height:22px;" title="https://go.johndelaney.com/Debate-Survey?source=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;email=****@****.****&amp;zip=10023&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=3+-+BEGIN+NOWnbspraquo&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns">BEGIN NOW »</a></td>
+							</tr></tbody></table></td>
+			</tr></tbody></table></center>
+<p style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; ">
+	Our campaign has always been about:</p>
+<ul style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; "><li style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; ">
+		Ensuring every American has affordable, quality health care without kicking millions off the plans they like;</li>
+	<li style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; ">
+		Taking drastic measures to protect the environment and address climate change; and</li>
+	<li style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; ">
+		Creating a government that works for the people -- not politicians and special interests.</li>
+</ul><p style="font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; line-height: 1.45; color: #39393b; ">
+	But we need to know what’s top of mind for you.<br/><br/>
+	This campaign is possible thanks to supporters like you -- and we want to make sure your voice is heard on the debate stage!<br/><br/><strong>So we have to ask, please take a moment to fill out our debate survey:</strong><br/><br/><a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523238/1439390494/VEsC/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAyMyJ9/" style="color: #004f80" title="https://go.johndelaney.com/Debate-Survey?source=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;email=****@****.****&amp;zip=10023&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=4+-+httpsgojohndelaneycomDebateSurvey&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns"><strong>https://go.johndelaney.com/Debate-Survey</strong></a><br/><br/>
+	Thanks for all that you do! We can’t wait to read your responses.<br/><br/><em>- Team Delaney</em></p></td>
+			</tr></tbody></table></div>
+
+
+
+
+
+<!-- START FOOTER -->
+<div style="width: 100%;  margin-top: 40px; text-align: center; ">
+	<table align="center" cellpadding="0" cellspacing="0" style="background: #004E7C url('https://go.johndelaney.com/page/-/white-house-bg_580.png') no-repeat bottom center; width:100%; max-width:600px;border-top: solid 4px #84b7e3" width="600"><!-- Start footer --><tbody><tr><td align="center">
+					<table align="center" border="0" cellpadding="20" cellspacing="0"><tbody><tr><td style="text-align: center; ">
+									<p style="margin-bottom:10px;text-align:center;color:#ffffff; font-size: 14px; font-family: Verdana, Geneva, sans-serif; letter-spacing: 0.01em">
+										<a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/2352323b/1439390494/VEsD/" style="font-size: 14px; line-height:16px; text-decoration:none; color:#ffffff;" title="https://www.johndelaney.com/?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=5+-+wwwJohnDelaneycom&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns"><strong>www.JohnDelaney.com</strong></a> |
+<strong>Text DELANEY to 72727</strong><br/><em style="font-size: 10px; line-height: 120%">Standard data and message rates apply. STOP to quit, HELP for info.</em></p>
+									<p style="line-height:16px;margin-bottom:0px;text-align:center;color:#e9e9e9; font-size: 10px; font-family: Verdana, Geneva, sans-serif;">
+										<a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/2352323a/1439390494/VEsA/" style="text-decoration:none;" title="https://www.facebook.com/johnkdelaneyjkd?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=6&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns"><img alt="fb" src="https://go.johndelaney.com/page/-/iconmonstr-facebook-6-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a> <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523225/1439390494/VEsB/" style="text-decoration:none;" title="https://www.twitter.com/johndelaney?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=7+-++&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns"> <img alt="tw" src="https://go.johndelaney.com/page/-/iconmonstr-twitter-1-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a> <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523224/1439390494/VEsO/" style="text-decoration:none;" title="https://www.instagram.com/johndelaney?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=8+-++&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns"> <img alt="ig" src="https://go.johndelaney.com/page/-/iconmonstr-instagram-11-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a> <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523227/1439390494/VEsP/" style="text-decoration:none;" title="https://www.youtube.com/channel/UCc7fDpVPrm9B9e-ChkXdVtA?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=9+-++&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns"> <img alt="yt" src="https://go.johndelaney.com/page/-/iconmonstr-youtube-6-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a></p>
+								</td>
+							</tr><tr><td class="content-block powered-by">
+									<table align="center" cellpadding="0" cellspacing="0" style="max-width: 350px; width:90%; border: solid 1px #ffffff;" width="350"><tbody><tr><td style="text-align: center; padding: 5px 10px 5px 10px;color:#e9e9e9; font-size:12px; line-height: 115%; font-family:Verdana, Geneva, sans-serif">
+													<span style="color:#e9e9e9; font-size:12px; line-height: 115%; font-family:Verdana, Geneva, sans-serif">Paid for by Friends of John Delaney.</span></td>
+											</tr></tbody></table><p align="center" style="color: #fff;text-align:center;color:#e9e9e9; font-size: 12px; margin-top: 5px; font-family: Verdana, Geneva, sans-serif; letter-spacing: 0.01em">
+										PO Box 70835, Bethesda, MD 20813</p>
+									<p align="center" style="text-align:center; margin-left:0px; margin-right: 0px; color:#e9e9e9; font-size: 10px; font-family: Verdana, Geneva, sans-serif; letter-spacing: 0.01em">
+									<span style="font-size: 10px;">	This email was sent to: <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523226/1439390494/VEsHBQ/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/s/update-your-information?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=10+-+EMAIL&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns">****@****.****</a>. If you were forwarded this email or would like to update your contact information, <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523221/1439390494/VEsHBA/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/s/update-your-information?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=11+-+click+here&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns">click here</a>. John is refusing <u>all</u> corporate PAC money. This campaign is driven by grassroots supporters like <em>you</em>. To make a donation, <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523220/1439390494/VEsHBw/p/eyJKU1Z6YjNWeVkyVWxKUT09IjoiIiwiSlNWbGJXRnBiQ1VsIjoicG9saXRpY2FsbmV3c2JvdDIwMjBAZ21haWwuY29tIiwiSlNWbWFYSnpkRzVoYldVbEpRPT0iOiIiLCJKU1ZzWVhOMGJtRnRaU1VsIjoiIiwiSlNWamFYUjVKU1U9IjoiTmV3IFlvcmsiLCJKU1Z6ZEdGMFpTVWwiOiIiLCJKU1Y2YVhBbEpRPT0iOiIxMDAyMyIsIkpTVndhRzl1WlNVbCI6IiIsIkpTVnZZMk4xY0dGMGFXOXVKU1U9IjoiIiwiSlNWbGJYQnNiM2xsY2lVbCI6IiJ9/" style="text-decoration:none; color:#ffffff;" title="https://secure.actblue.com/donate/jkd_em-footer?refcode=&amp;recurring=auto&amp;amount=25&amp;amounts=5,35,50,100,250,500,1000&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=12+-+click+here&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns">click here</a>. If you'd like to scale back on the number of emails you get from us, <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523223/1439390494/VEsHBg/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/s/less-emails?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=13+-+click+here&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns">click here</a>. To unsubscribe completely, <a href="https://go.johndelaney.com/page/m/29b910a4/30fdff35/31858c44/23523222/1439390494/VEsHAQ/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/content/unsubscribe/?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=14+-+click+here&amp;utm_campaign=em_surv_2019.06.21_e1_td_debate-survey_ns&amp;source=em_surv_2019.06.21_e1_td_debate-survey_ns">click here</a>.</span></p>
+								</td>
+							</tr></tbody></table><!-- END FOOTER --><!--[if mso]></td></tr></table><![endif]--><!-- END CENTERED WHITE CONTAINER --></td></tr></tbody></table></div></td></tr></tbody></table><img height="1" src="https://go.johndelaney.com/page/o/29b910a4/30fdff35/31858c44/2352323c/1439390494/open.gif" width="1"/>
+
+
+</body></html>

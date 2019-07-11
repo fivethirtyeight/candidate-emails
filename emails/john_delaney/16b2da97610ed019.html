@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--?xml encoding="UTF-8"??--><html xmlns="http://www.w3.org/1999/xhtml"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Simple Transactional Email</title><style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+
+      body {
+        background-color: #ffffff;
+        font-family: Verdana, Geneva, sans-serif;
+        -webkit-font-smoothing: antialiased;
+
+        font-size: 16px;
+        line-height: 1.65;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td {
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 16px;
+          line-height: 1.65;
+          vertical-align: top; }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #ffffff;
+        width: 100%; }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 20px auto !important;
+        /* makes it centered */
+        max-width: 600px;
+   }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        max-width: 600px; }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #ffffff;
+        width: 100%; }
+
+      .wrapper {
+        box-sizing: border-box; }
+
+      .content-block {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+   
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #39393b;
+        font-family: Verdana, Geneva, sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 30px; }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+
+      p,
+      ul,
+      ol {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 15px;
+        color: #39393b; }
+        p {
+          line-height: 1.45;
+        }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+
+      a {
+        color: #005080;
+        text-decoration: underline;
+font-weight: bold; 
+}
+
+a:hover {
+  color: #77b9e7;
+}
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      table[class=body] .btn table {
+        margin: 0 auto;
+      }
+
+      .btn {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn table {
+          width: auto; }
+        .btn table td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn a {
+          background-color: #ffffff;
+          border: solid 1px #5c8ab6;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #5c8ab6;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+
+      .btn-primary table td {
+        background-color: #5c8ab6; }
+
+      .btn-primary a {
+        background-color: #5c8ab6;
+        border-color: #5c8ab6;
+        color: #ffffff; }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+
+      .first {
+        margin-top: 0; }
+
+      .align-center {
+        text-align: center; }
+
+      .align-right {
+        text-align: right; }
+
+      .align-left {
+        text-align: left; }
+
+      .clear {
+        clear: both; }
+
+      .mt0 {
+        margin-top: 0; }
+
+      .mb0 {
+        margin-bottom: 0; }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+
+      .powered-by a {
+        text-decoration: none; }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        margin: 20px 0; }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=main] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=main] p,
+        table[class=main] ul,
+        table[class=main] ol,
+        table[class=main] td,
+        table[class=main] span,
+        table[class=main] a {
+          font-size: 19px !important; }
+
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }
+}
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; }
+        .btn-primary table td:hover {
+          background-color: #34495e !important; }
+        .btn-primary a:hover {
+          background-color: #34495e !important;
+          border-color: #34495e !important; } }
+
+    </style></head><body class=""><span style="display:none !important; visibility:hidden; mso-hide:all; font-size:1px; color:#ffffff; line-height:1px; max-height:0px; max-width:0px; opacity:0; overflow:hidden;">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+
+<table bgcolor="ffffff" border="0" cellpadding="0" cellspacing="0" class="body" height="100%" width="100%"><tbody><tr><td align="center" class="container" valign="top"><!-- 600px container (white background) --><!--[if mso]>
+                                    <table width="600" cellpadding="0" cellspacing="0" style="width: 600px;">
+                                        <tr><td width="600" style="width: 600px;" valign="top"><![endif]-->
+        <div class="content">
+
+      <table cellpadding="0" cellspacing="0" class="main" style="width:100%; max-width:600px;" width="600"><!-- Start logo row --><tbody><tr><td class="wrapper" style="padding-left: 20px; padding-right: 20px; padding-bottom: 40px">
+ 
+
+		<div style="display: none; max-height: 0px; overflow: hidden;">
+	 ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌  ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ </div>
+<center>
+	<table align="center" cellpadding="0" cellspacing="0" style="width:100%; max-width: 600px;text-align: center;display:block; border: solid 6px #004f80" width="600"><tbody><tr><td align="center" style="border:0;padding:0;margin:0;">
+					<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d72c/1528458237/VEsH/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=1&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><img alt="John Delaney for President" border="0" src="https://go.johndelaney.com/page/-/2019.06.06_GraphicEmail_130k_05.jpg" style="width:100%;display:block;"/></a></td>
+			</tr><tr><td align="center" style="border:0;padding:0;margin:0;">
+					<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d72f/1528458237/VEsE/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=2&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><img alt="Help get John to the Democratic Debates! According to the latest DNC rules,we need 130,000 grassroots donors to qualify for the Democratic Debates." border="0" src="https://go.johndelaney.com/page/-/2019.06.06_GraphicEmail_130k_01.png" style="width:100%;display:block;"/></a></td>
+			</tr><tr><td align="center" style="border:0;padding:0;margin:0;">
+					<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d72e/1528458237/VEsF/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=3&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><img alt="EVEN $1 COUNTS. Chip in now »" border="0" src="https://go.johndelaney.com/page/-/2019.06.06_GraphicEmail_130k_02.jpg" style="width:100%;display:block;"/></a></td>
+			</tr><tr><td align="center" style="border:0;padding:0;margin:0;">
+					<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d729/1528458237/VEsC/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=4&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><img alt="This week, the Wall Street Journal editorial board commended John for having " border="0" src="https://go.johndelaney.com/page/-/2019.06.06_GraphicEmail_130k_03.png" style="width:100%;display:block;" tell="" the="" to=""/></a></td>
+			</tr><tr><td align="center" bgcolor="004f80" style="border:0;padding:0;margin:0;">
+					<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d728/1528458237/VEsD/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=5&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><img alt="Give John the chance to present his ideas to the American people. Donate any amount now:" border="0" src="https://go.johndelaney.com/page/-/2019.06.06_GraphicEmail_130k_04.jpg" style="background-color: #004f80; width:100%;display:block;"/></a></td>
+			</tr><tr><td align="center" bgcolor="004f80" style="border:0;padding-bottom: 15px; margin:0;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; background: #004f80;" width="100%"><tbody><tr><td align="center" style="font-size: 0;" valign="top">
+									<div style="display: inline-block; max-width: 49%; min-width: 225px; vertical-align: top;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center">
+														<table border="0" cellpadding="0" cellspacing="6" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center" bgcolor="#EE283B" style="-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; letter-spacing: -0.025em; font-family: Avenir, Arial, sans-serif; color: #ffffff; font-weight: bolder;">
+																		<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d72b/1528458237/VEsA/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="padding: 8px 6px 8px 6px; mso-padding-alt: 6px 6px; display: block; text-decoration: none; border-radius: 2px;  text-align: center; text-transform: uppercase; font-weight: bolder; font-size: 19px; border: solid 2px #ffffff; color: #ffffff; mso-line-height-rule: exactly; line-height: 36px;" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=1&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=6+-+Donate+1nbspraquo&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">Donate $1 »</a></td>
+																</tr></tbody></table></td>
+												</tr></tbody></table></div>
+									<!-- [if mso]>
+                        </td><td>
+                        <![endif]-->
+									<div style="display: inline-block; max-width: 49%; min-width: 225px; vertical-align: top;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center">
+														<table border="0" cellpadding="0" cellspacing="6" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center" bgcolor="#EE283B" style="-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; letter-spacing: -0.025em; font-family: Avenir, Arial, sans-serif; color: #ffffff; font-weight: bolder;">
+																		<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d72a/1528458237/VEsB/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="padding: 8px 6px 8px 6px; mso-padding-alt: 6px 6px; display: block; text-decoration: none; border-radius: 2px;  text-align: center; text-transform: uppercase; font-weight: bolder; font-size: 19px; border: solid 2px #ffffff;  color: #ffffff; mso-line-height-rule: exactly; line-height: 36px;" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=5&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=7+-+Donate+5nbspraquo&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">Donate $5 »</a></td>
+																</tr></tbody></table></td>
+												</tr></tbody></table></div>
+									<!-- [if mso]>
+</table><table>
+                        <![endif]--></td>
+							</tr></tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; background: #004f80; border-collapse: separate" width="100%"><tbody><tr><td align="center" style="font-size: 0;" valign="top">
+									<div style="display: inline-block; max-width: 49%; min-width: 225px; vertical-align: top;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center">
+														<table border="0" cellpadding="0" cellspacing="6" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center" bgcolor="#EE283B" style="-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; letter-spacing: -0.025em; font-family: Avenir, Arial, sans-serif; color: #ffffff; font-weight: bolder;">
+																		<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d715/1528458237/VEsO/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="padding: 8px 6px 8px 6px; mso-padding-alt: 6px 6px; display: block; text-decoration: none; border-radius: 2px;  text-align: center; text-transform: uppercase; font-weight: bolder; font-size: 19px; border: solid 2px #ffffff;  color: #ffffff; mso-line-height-rule: exactly; line-height: 36px;" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=50&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=8+-+Donate+50nbspraquo&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">Donate $50 »</a></td>
+																</tr></tbody></table></td>
+												</tr></tbody></table></div>
+									<!-- [if mso]>
+                        </td><td>
+                        <![endif]-->
+									<div style="display: inline-block; max-width: 49%; min-width: 225px; vertical-align: top;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center">
+														<table border="0" cellpadding="0" cellspacing="6" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center" bgcolor="#EE283B" style="-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; letter-spacing: -0.025em; font-family: Avenir, Arial, sans-serif; color: #ffffff; font-weight: bolder;">
+																		<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d714/1528458237/VEsP/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="padding: 8px 6px 8px 6px; mso-padding-alt: 6px 6px; display: block; text-decoration: none;  text-align: center; text-transform: uppercase; font-weight: bolder; font-size: 19px; border: solid 2px #ffffff; color: #ffffff; mso-line-height-rule: exactly; line-height: 36px;" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=100&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=9+-+Donate+100nbspraquo&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">Donate $100 »</a></td>
+																</tr></tbody></table></td>
+												</tr></tbody></table></div>
+									<!-- [if mso]>
+</table><table>
+                        <![endif]--></td>
+							</tr></tbody></table><table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 500px; background: #004f80; border-collapse: separate; margin-bottom: 15px" width="100%"><tbody><tr><td align="center" style="font-size: 0;" valign="top">
+									<div style="display: inline-block; max-width: 49%; min-width: 225px; vertical-align: top;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center">
+														<table border="0" cellpadding="0" cellspacing="6" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center" bgcolor="#EE283B" style="-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; letter-spacing: -0.025em; font-family: Avenir, Arial, sans-serif; color: #ffffff; font-weight: bolder;">
+																		<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d717/1528458237/VEsHBQ/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="padding: 8px 6px 8px 6px; mso-padding-alt: 6px 6px; display: block; text-decoration: none;  text-align: center; text-transform: uppercase; font-weight: bolder; font-size: 19px; border: solid 2px #ffffff; color: #ffffff; mso-line-height-rule: exactly; line-height: 36px;" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=250&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=10+-+Donate+250nbspraquo&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">Donate $250 »</a></td>
+																</tr></tbody></table></td>
+												</tr></tbody></table></div>
+									<!-- [if mso]>
+                        </td><td>
+                        <![endif]-->
+									<div style="display: inline-block; max-width: 49%; min-width: 225px; vertical-align: top;">
+										<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center">
+														<table border="0" cellpadding="0" cellspacing="6" style="margin: 0 auto; width: 225px; max-width: 225px; border-collapse: separate"><tbody><tr><td align="center" bgcolor="#EE283B" style="-moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; letter-spacing: -0.025em; font-family: Avenir, Arial, sans-serif; color: #ffffff; font-weight: bolder;">
+																		<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d716/1528458237/VEsHBA/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="padding: 8px 6px 8px 6px; mso-padding-alt: 6px 6px; display: block; text-decoration: none;  text-align: center; text-transform: uppercase; font-weight: bolder; font-size: 19px; border: solid 2px #ffffff; color: #ffffff; mso-line-height-rule: exactly; line-height: 36px;" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=11+-+Other+Amountnbspraquo&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">Other Amount »</a></td>
+																</tr></tbody></table></td>
+												</tr></tbody></table></div>
+									<!-- [if mso]>
+</table><table></td></tr></table>
+                        <![endif]--></td>
+							</tr></tbody></table></td>
+			</tr><tr><td align="center" bgcolor="004f80" style="border:0;padding:0;margin:0;">
+					<p style="font-family: Verdana, Geneva, sans-serif; font-size: 20px; font-weight: normal; margin-bottom: 25px; margin-top: 0px; line-height: 1.45; color: #39393b; ">
+						<strong><a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d711/1528458237/VEsHBw/p/eyJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1ZtYVhKemRHNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZqYVhSNUpTVT0iOiJOZXcgWW9yayIsIkpTVnpkR0YwWlNVbCI6IiIsIkpTVjZhWEFsSlE9PSI6IjEwMDIzIiwiSlNWd2FHOXVaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIn0=/" style="color: #ffffff" title="https://secure.actblue.com/donate/jkd_fr_q22019?refcode=em_fr_2019.06.06_e1_td_130k_all&amp;recurring=auto&amp;amount=25&amp;amounts=1,5,35,50,100,250,500&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=12+-+httpsgojohndelaneycomdonate&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">https://go.johndelaney.com/donate</a></strong></p>
+				</td>
+			</tr></tbody></table></center>
+<p>
+	 </p></td>
+			</tr></tbody></table></div>
+
+
+
+
+
+<!-- START FOOTER -->
+<div style="width: 100%;  margin-top: 40px; text-align: center; ">
+	<table align="center" cellpadding="0" cellspacing="0" style="background: #004E7C url('https://go.johndelaney.com/page/-/white-house-bg_580.png') no-repeat bottom center; width:100%; max-width:600px;border-top: solid 4px #84b7e3" width="600"><!-- Start footer --><tbody><tr><td align="center">
+					<table align="center" border="0" cellpadding="20" cellspacing="0"><tbody><tr><td style="text-align: center; ">
+									<p style="margin-bottom:10px;text-align:center;color:#ffffff; font-size: 14px; font-family: Verdana, Geneva, sans-serif; letter-spacing: 0.01em">
+										<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d710/1528458237/VEsHBg/" style="font-size: 14px; line-height:16px; text-decoration:none; color:#ffffff;" title="https://www.johndelaney.com/?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=13+-+wwwJohnDelaneycom&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><strong>www.JohnDelaney.com</strong></a> |
+<strong>Text DELANEY to 72727</strong><br/><em style="font-size: 10px; line-height: 120%">Standard data and message rates apply. STOP to quit, HELP for info.</em></p>
+									<p style="line-height:16px;margin-bottom:0px;text-align:center;color:#e9e9e9; font-size: 10px; font-family: Verdana, Geneva, sans-serif;">
+										<a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d713/1528458237/VEsHAQ/" style="text-decoration:none;" title="https://www.facebook.com/johnkdelaneyjkd?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=14&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"><img alt="fb" src="https://go.johndelaney.com/page/-/iconmonstr-facebook-6-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a> <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d712/1528458237/VEsHAA/" style="text-decoration:none;" title="https://www.twitter.com/johndelaney?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=15+-++&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"> <img alt="tw" src="https://go.johndelaney.com/page/-/iconmonstr-twitter-1-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a> <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d71d/1528458237/VEsHAw/" style="text-decoration:none;" title="https://www.instagram.com/johndelaney?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=16+-++&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"> <img alt="ig" src="https://go.johndelaney.com/page/-/iconmonstr-instagram-11-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a> <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d71c/1528458237/VEsHAg/" style="text-decoration:none;" title="https://www.youtube.com/channel/UCc7fDpVPrm9B9e-ChkXdVtA?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=17+-++&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all"> <img alt="yt" src="https://go.johndelaney.com/page/-/iconmonstr-youtube-6-24.png" style="width:22px; padding: 0px 5px; vertical-align:top;" width="22"/></a></p>
+								</td>
+							</tr><tr><td class="content-block powered-by">
+									<table align="center" cellpadding="0" cellspacing="0" style="max-width: 350px; width:90%; border: solid 1px #ffffff;" width="350"><tbody><tr><td style="text-align: center; padding: 5px 10px 5px 10px;color:#e9e9e9; font-size:12px; line-height: 115%; font-family:Verdana, Geneva, sans-serif">
+													<span style="color:#e9e9e9; font-size:12px; line-height: 115%; font-family:Verdana, Geneva, sans-serif">Paid for by Friends of John Delaney.</span></td>
+											</tr></tbody></table><p align="center" style="color: #fff;text-align:center;color:#e9e9e9; font-size: 12px; margin-top: 5px; font-family: Verdana, Geneva, sans-serif; letter-spacing: 0.01em">
+										PO Box 70835, Bethesda, MD 20813</p>
+									<p align="center" style="text-align:center; margin-left:0px; margin-right: 0px; color:#e9e9e9; font-size: 10px; font-family: Verdana, Geneva, sans-serif; letter-spacing: 0.01em">
+									<span style="font-size: 10px;">	This email was sent to: <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d71f/1528458237/VEsHDQ/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/s/update-your-information?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=18+-+EMAIL&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">****@****.****</a>. If you were forwarded this email or would like to update your contact information, <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d71e/1528458237/VEsHDA/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/s/update-your-information?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=19+-+click+here&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">click here</a>. John is refusing <u>all</u> corporate PAC money. This campaign is driven by grassroots supporters like <em>you</em>. To make a donation, <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d719/1528458237/VEsEBQ/p/eyJKU1Z6YjNWeVkyVWxKUT09IjoiIiwiSlNWbGJXRnBiQ1VsIjoicG9saXRpY2FsbmV3c2JvdDIwMjBAZ21haWwuY29tIiwiSlNWbWFYSnpkRzVoYldVbEpRPT0iOiIiLCJKU1ZzWVhOMGJtRnRaU1VsIjoiIiwiSlNWamFYUjVKU1U9IjoiTmV3IFlvcmsiLCJKU1Z6ZEdGMFpTVWwiOiIiLCJKU1Y2YVhBbEpRPT0iOiIxMDAyMyIsIkpTVndhRzl1WlNVbCI6IiIsIkpTVnZZMk4xY0dGMGFXOXVKU1U9IjoiIiwiSlNWbGJYQnNiM2xsY2lVbCI6IiJ9/" style="text-decoration:none; color:#ffffff;" title="https://secure.actblue.com/donate/jkd_em-footer?refcode=&amp;recurring=auto&amp;amount=25&amp;amounts=5,35,50,100,250,500,1000&amp;email=****@****.****&amp;firstname=&amp;lastname=&amp;city=New York&amp;state=&amp;zip=10023&amp;phone=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=20+-+click+here&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">click here</a>. If you'd like to scale back on the number of emails you get from us, <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d718/1528458237/VEsEBA/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/s/less-emails?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=21+-+click+here&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">click here</a>. To unsubscribe completely, <a href="https://go.johndelaney.com/page/m/29b9120e/30fdff35/30437c3a/2353d71b/1528458237/VEsEBw/" style="text-decoration:none; color:#ffffff;" title="https://go.johndelaney.com/page/content/unsubscribe/?utm_medium=email&amp;utm_source=johndelaney&amp;utm_content=22+-+click+here&amp;utm_campaign=em_fr_2019.06.06_e1_td_130k_all&amp;source=em_fr_2019.06.06_e1_td_130k_all">click here</a>.</span></p>
+								</td>
+							</tr></tbody></table><!-- END FOOTER --><!--[if mso]></td></tr></table><![endif]--><!-- END CENTERED WHITE CONTAINER --></td></tr></tbody></table></div></td></tr></tbody></table><img height="1" src="https://go.johndelaney.com/page/o/29b9120e/30fdff35/30437c3a/2353d72d/1528458237/open.gif" width="1"/>
+
+
+</body></html>

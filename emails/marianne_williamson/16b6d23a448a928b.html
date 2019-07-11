@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml"><head><meta charset="utf-8"/><!-- utf-8 works for most cases --><meta content="width=device-width" name="viewport"/><!-- Forcing initial-scale shouldn't be necessary --><meta content="IE=edge" http-equiv="X-UA-Compatible"/><!-- Use the latest (edge) version of IE rendering engine --><meta name="x-apple-disable-message-reformatting"/><!-- Disable auto-scale in iOS 10 Mail entirely -->
+	<title></title>
+	<!-- The title tag shows in email notifications, like Android 4.4. --><!-- Web Font / @font-face : BEGIN --><!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. --><!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]><!--><!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> --><!--<![endif]--><!-- Web Font / @font-face : END --><!-- CSS Reset : BEGIN -->
+	<style type="text/css">/* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            .email-container {
+                min-width: 414px !important;
+            }
+        }
+	</style>
+	<!-- CSS Reset : END --><!-- Reset list spacing because Outlook ignores much of our inline CSS. --><!--[if mso]>
+	<style type="text/css">
+		ul,
+		ol {
+			margin: 0 !important;
+		}
+		li {
+			margin-left: 30px !important;
+		}
+		li.list-item-first {
+			margin-top: 0 !important;
+		}
+		li.list-item-last {
+			margin-bottom: 10px !important;
+		}
+	</style>
+	<![endif]--><!-- Progressive Enhancements : BEGIN -->
+	<style type="text/css">/* What it does: Hover styles for buttons */
+	    .button-td,
+	    .button-a {
+	        transition: all 100ms ease-in;
+	    }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #555555 !important;
+	        border-color: #555555 !important;
+	    }
+	    
+	    .email-container {
+	        margin: 0 auto !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+	    /* Media Queries */
+	    @media screen and (max-width: 600px) {
+
+	        /* What it does: Adjust typography on small screens to improve readability */
+	        .email-container p {
+	            font-size: 16px !important;
+	            line-height: 150% !important;
+	        }
+
+	    }
+	</style>
+	<!-- Progressive Enhancements : END --><!-- What it does: Makes background images in 72ppi Outlook render at correct size. --><!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+</head>
+<!--
+	The email background color (#f6f6f6) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f6f6f6;" width="100%">
+<center style="width: 100%; background-color: #f6f6f6; font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 150%; color: #555555;"><!--[if mso | IE]>
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f6f6f6;">
+        <tr>
+        <td>
+    <![endif]--><!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 600px.
+            2. MSO tags for Desktop Windows Outlook enforce a 600px width.
+        -->
+<div class="email-container" style="max-width: 600px; margin: 0 auto; padding: 0;"><!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
+                <tr>
+                    <td>
+            <![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 auto;" width="100%">
+	<tbody>
+		<tr>
+			<td bgcolor="#ffffff">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 auto;" width="100%">
+				<tbody>
+					<tr>
+						<td style="background-color: rgb(255, 255, 255); font-size: 0px; line-height: 0px; text-align: center;"><a href="https://click.ngpvan.com/k/7621750/72286748/-216496096?nvep=ew0KICAiVGVuYW50VXJpIjogIm5ncHZhbjovL3Zhbi9OR1AvTkdQMTEvMS83MjE0OCIsDQogICJEaXN0cmlidXRpb25VbmlxdWVJZCI6ICI4NWNhNzJmYy0yODkyLWU5MTEtYWJjNC0yODE4NzgzOTFlZmIiLA0KICAiRW1haWxBZGRyZXNzIjogInBvbGl0aWNhbG5ld3Nib3QyMDIwQGdtYWlsLmNvbSINCn0%3D&amp;hmac=MkulPH_76zquKfUyH_33zLLTSueC_XrSZglHqlI2VJY="><img align="center" alt="" class="g-img" src="https://nvlupin.blob.core.windows.net/images/van/NGP/NGP11/1/72148/images/logo_mw.png" style="max-width: 600px; background: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 15px; color: rgb(85, 85, 85); margin: auto; border-width: 0px; border-style: solid; width: 301px; height: 67px;"/></a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: 0 auto;" width="100%">
+				<tbody>
+					<tr>
+						<td bgcolor="#ffffff" style="padding: 20px;"><p style="font-size: 1px; color: white;">Donate any amount today to enter.</p>
+
+<p><span style="font-size:16px;">Dear Fivethirtyeight, </span></p>
+
+<p><span style="font-size:16px;">Next Thursday, June 27th Marianne will be on stage in Miami as part of the DNC debates.</span></p>
+
+<p><span style="font-size:16px;">We have a big announcement. Donate any amount to our campaign until tomorrow, Wednesday June 19th by 6pm ET / 3pm PT, and you’ll be entered for a chance to join Marianne at the debate next week. </span></p>
+
+<p><span style="font-size:16px;">The only way to defeat a big lie is with #BigTruth. Marianne is ready to tell it like it is at the debates -- and like no one else will. </span></p>
+
+<p><span style="font-size:16px;"><a href="https://click.ngpvan.com/k/7621751/72286749/-1139335745?nvep=ew0KICAiVGVuYW50VXJpIjogIm5ncHZhbjovL3Zhbi9OR1AvTkdQMTEvMS83MjE0OCIsDQogICJEaXN0cmlidXRpb25VbmlxdWVJZCI6ICI4NWNhNzJmYy0yODkyLWU5MTEtYWJjNC0yODE4NzgzOTFlZmIiLA0KICAiRW1haWxBZGRyZXNzIjogInBvbGl0aWNhbG5ld3Nib3QyMDIwQGdtYWlsLmNvbSINCn0%3D&amp;hmac=MkulPH_76zquKfUyH_33zLLTSueC_XrSZglHqlI2VJY="><img alt="" src="https://nvlupin.blob.core.windows.net/images/van/NGP/NGP11/1/72148/images/donate-here.png" style="width: 200px; height: 60px;"/></a></span></p>
+
+<p><span style="font-size:16px;">As a guest of the campaign, we’ll bring you and one buddy to Miami and back! You’ll get prime seats at the debate. Ask your +1 to donate too for an even better chance.</span></p>
+
+<p><span style="font-size:16px;">We need a big truth teller because Donald Trump will eat half-truth tellers alive. Join our campaign to share big truths on the big stage. </span></p>
+
+<p><span style="font-size:16px;">With deep gratitude, </span></p>
+
+<p><span style="font-size:16px;">Marianne</span></p>
+
+<p><span style="font-size:8px;"><em>No purchase or payment of any kind is necessary to enter or win. To enter without purchase or payment <a href="https://click.ngpvan.com/k/7621752/72286750/-1388867735?nvep=ew0KICAiVGVuYW50VXJpIjogIm5ncHZhbjovL3Zhbi9OR1AvTkdQMTEvMS83MjE0OCIsDQogICJEaXN0cmlidXRpb25VbmlxdWVJZCI6ICI4NWNhNzJmYy0yODkyLWU5MTEtYWJjNC0yODE4NzgzOTFlZmIiLA0KICAiRW1haWxBZGRyZXNzIjogInBvbGl0aWNhbG5ld3Nib3QyMDIwQGdtYWlsLmNvbSINCn0%3D&amp;hmac=MkulPH_76zquKfUyH_33zLLTSueC_XrSZglHqlI2VJY=" target="_blank">click here</a>. Void where prohibited. Odds of winning depend on number of entries received. Deadline for entry: 6pm EST, June 19 2019. Prize consists of flight for two to Miami, admittance for two to 6/27/19 presidential debate, and one night hotel stay. Approx prize value $1500. Subject to <a href="https://click.ngpvan.com/k/7621753/72286751/-1101981777?nvep=ew0KICAiVGVuYW50VXJpIjogIm5ncHZhbjovL3Zhbi9OR1AvTkdQMTEvMS83MjE0OCIsDQogICJEaXN0cmlidXRpb25VbmlxdWVJZCI6ICI4NWNhNzJmYy0yODkyLWU5MTEtYWJjNC0yODE4NzgzOTFlZmIiLA0KICAiRW1haWxBZGRyZXNzIjogInBvbGl0aWNhbG5ld3Nib3QyMDIwQGdtYWlsLmNvbSINCn0%3D&amp;hmac=MkulPH_76zquKfUyH_33zLLTSueC_XrSZglHqlI2VJY=" target="_blank">Official Rules</a>, including restrictions on eligibility.</em></span></p>
+</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+				<tbody>
+					<tr>
+						<td align="center" bgcolor="#ffffff" style="width: 100%; font-size: 0px; line-height: 0px;" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+							<tbody>
+								<tr>
+									<td style="padding: 20px 40px 0px 40px; font-family: 'Cormorant', Georgia, Courier New, serif; font-size: 15px; line-height: 16px; color: #00000; text-align: center; font-weight:500;">
+									<p style="margin: 0;">Paid for by Marianne Williamson For President</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="footer" style="padding: 10px 40px 40px 40px; font-family: 'Poppins', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 18px; color: #00000; text-align: center; font-weight:400;">
+									<p style="margin: 0;">1787 Tribute Road, Suite K, Sacramento, CA 95815<br/>
+									<br/>
+									If you believe you received this message in error or wish to no longer receive email from us, please <a href="https://email.ngpvan.com/unsubscribeUnique/5131e9d7-1b92-e911-abc4-281878391efb/85ca72fc-2892-e911-abc4-281878391efb?nvep=ew0KICAiVGVuYW50VXJpIjogIm5ncHZhbjovL3Zhbi9OR1AvTkdQMTEvMS83MjE0OCIsDQogICJEaXN0cmlidXRpb25VbmlxdWVJZCI6ICI4NWNhNzJmYy0yODkyLWU5MTEtYWJjNC0yODE4NzgzOTFlZmIiLA0KICAiRW1haWxBZGRyZXNzIjogInBvbGl0aWNhbG5ld3Nib3QyMDIwQGdtYWlsLmNvbSINCn0%3D&amp;hmac=MkulPH_76zquKfUyH_33zLLTSueC_XrSZglHqlI2VJY=&amp;id=100743165&amp;emailAddress=****@****.****">unsubscribe</a></p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</center>
+<img height="1" src="https://pixel.app.returnpath.net/pixel.gif?r=fb85f22a5995cfef9189fa238e903d41be5fec07" width="1"/><img src="https://click.ngpvan.com/j/72286752?nvep=ew0KICAiVGVuYW50VXJpIjogIm5ncHZhbjovL3Zhbi9OR1AvTkdQMTEvMS83MjE0OCIsDQogICJEaXN0cmlidXRpb25VbmlxdWVJZCI6ICI4NWNhNzJmYy0yODkyLWU5MTEtYWJjNC0yODE4NzgzOTFlZmIiLA0KICAiRW1haWxBZGRyZXNzIjogInBvbGl0aWNhbG5ld3Nib3QyMDIwQGdtYWlsLmNvbSINCn0%3D&amp;hmac=MkulPH_76zquKfUyH_33zLLTSueC_XrSZglHqlI2VJY="/>
+
+</body></html>

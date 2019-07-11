@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<!--?xml encoding="UTF-8"??--><html lang="en"><!--HEADER --><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><meta name="”x-apple-disable-message-reformatting”"/><meta content="IE=edge" http-equiv="X-UA-Compatible"/><title></title><style type="text/css">
+	/* CLIENT-SPECIFIC STYLES */
+	body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: futra-pt, arial, sans-serif !Important;}
+	table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+	img { -ms-interpolation-mode: bicubic; }
+		b{font-weight: 700;
+		font-family: avenir, sans-serif;}
+
+	 /* RESET STYLES */
+	img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+	body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+	/* iOS BLUE LINKS */
+	a[x-apple-data-detectors] {
+	    color: inherit !important;
+	    text-decoration: none !important;
+	    font-size: inherit !important;
+	    font-family: inherit !important;
+	    font-weight: inherit !important;
+	    line-height: inherit !important;
+	}
+
+	/* Generic Hover Class*/
+
+	 .link-hover-class:hover, .link-hover-class > *:hover{ color: blue !important;}
+
+	/* Hover Profiles*/
+	
+	.Red-btn:hover {
+		background: #df2847 !important;
+		-webkit-border-radius:inherit;
+		border-radius:inherit;
+	}
+	.Red-link:hover, .Red-link > *:hover {
+		color: #df2847 !important;
+	}
+	.Green-btn:hover {
+		background: #47b07f !important;
+		-webkit-border-radius:inherit;
+		border-radius:inherit;
+	}
+	.Green-link:hover, .Green-link > *:hover {
+		color: #47b07f !important;
+	}
+
+	/* Hover Toggle Classes */
+
+	.link-hover:hover { text-decoration: none; }
+
+	 /* STYLES */
+
+	.gmail-show {
+	    height: auto !important;
+	    width: auto !important;
+	    max-width: none !important;
+	    max-height: none !important;
+	    overflow: auto !important;
+	    visibility: visible !important;
+	    display: block !important;
+	}
+
+	/* GMAIL TARGETTING AT A HIGHER BREAKPOINT */
+	@media screen and (max-width: 1200px) {
+	    u ~ div .responsive-topbox-item-600 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    u ~ div .mobile-hide-topbox-item-600 {
+		display: none !important;
+	    }
+	    u ~ div .mobile-topbox-padding-0-600 {
+		padding: 0px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-600 {
+		padding: 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-600 {
+		padding: 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-600 {
+		padding: 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-600 {
+		padding: 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-top-item-600 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-top-item-600 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-top-item-600 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-top-item-600 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-bottom-item-600 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-bottom-item-600 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-bottom-item-600 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-bottom-item-600 {
+		padding: 10px 20px 20px 20px !important;
+	    }
+	    u ~ div .responsive-topbox-item-480 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    u ~ div .mobile-hide-topbox-item-480 {
+		display: none !important;
+	    }
+	    u ~ div .mobile-topbox-padding-0-480 {
+		padding: 0px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-480 {
+		padding: 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-480 {
+		padding: 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-480 {
+		padding: 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-480 {
+		padding: 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-top-item-480 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-top-item-480 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-top-item-480 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-top-item-480 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-5-bottom-item-480 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-10-bottom-item-480 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-15-bottom-item-480 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    u ~ div .mobile-topbox-padding-20-bottom-item-480 {
+		padding: 10px 20px 20px 20px !important;
+		}
+	}
+
+/* WEBKIT TARGETING MEDIA QUERY / WEBKIT STYLES */
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+
+	    /* WEBKIT HIDE/SHOW MAGIC */
+	    .webkit-show {
+		height: auto !important;
+		width: auto !important;
+		max-width: none !important;
+		max-height: none !important;
+		overflow: auto !important;
+		visibility: visible !important;
+		display: block !important;
+	    }
+
+	    .webkit-hide {
+		display: none !important;
+	    }
+
+	    .ptop50 {
+		padding-top: 50px !important;
+	    }
+
+	    #font-weight-normal {
+		font-weight: normal !important;
+	    }
+
+	}
+
+	@media screen and (max-width: 800px) {
+	    .img-max {
+		width: 100% !important;
+		max-width: 100% !important;
+		height: auto !important;
+	    }
+
+	    .full-width {
+		max-width: 100% !important;
+	    }
+	}
+
+	/* RESPONSIVE STUFF */
+	@media screen and (max-width: 600px) {
+	    .responsive-topbox-item-600 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    .mobile-hide-topbox-item-600 {
+		display: none !important;
+	    }
+	    .mobile-topbox-padding-0-600 {
+		padding: 0px !important;
+	    }
+	    .mobile-topbox-padding-5-600 {
+		padding: 5px !important;
+	    }
+	    .mobile-topbox-padding-10-600 {
+		padding: 10px !important;
+	    }
+	    .mobile-topbox-padding-15-600 {
+		padding: 15px !important;
+	    }
+	    .mobile-topbox-padding-20-600 {
+		padding: 20px !important;
+	    }
+	    .mobile-topbox-padding-5-top-item-600 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-top-item-600 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-top-item-600 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-top-item-600 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    .mobile-topbox-padding-5-bottom-item-600 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-bottom-item-600 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-bottom-item-600 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-bottom-item-600 {
+		padding: 10px 20px 20px 20px !important;
+	    }
+	    .responsive-table {
+		width: 100% !important;
+	    }
+	    .responsive-table-button {
+		width: 100% !important;
+		min-width: 100% !important;
+		max-width: 100% !important;
+	    }
+	    .mobile-text {
+		font-size: 24px !important;
+		line-height: 26px !important;
+	    }
+	    .mobile-font-14 {
+		font-size: 14px !important;
+		line-height: 14px !important;
+	    }
+	    .mobile-font-16 {
+		font-size: 16px !important;
+		line-height: 16px !important;
+	    }
+	    .mobile-font-18 {
+		font-size: 18px !important;
+		line-height: 18px !important;
+	    }
+	    .mobile-font-20 {
+		font-size: 20px !important;
+		line-height: 20px !important;
+	    }
+	    .mobile-font-22 {
+		font-size: 22px !important;
+		line-height: 22px !important;
+	    }
+	    .mobile-font-25 {
+		font-size: 25px !important;
+		line-height: 25px !important;
+	    }
+	    .mobile-font-30 {
+		font-size: 30px !important;
+		line-height: 30px !important;
+	    }
+	    .mobile-font-35 {
+		font-size: 35px !important;
+		line-height: 35px !important;
+	    }
+	    .mobile-font-40 {
+		font-size: 40px !important;
+		line-height: 40px !important;
+	    }
+	    #mobile {
+		font-size: 13px !important;
+		letter-spacing: 0px;
+		padding: 10px !important;
+	    }
+	    .mobile-footer-logo {
+		max-width: 50% !important;
+	    }
+	    .mobile {
+		font-size: 13px !important;
+		letter-spacing: 0px;
+		padding: 10px !important;
+	    }
+	
+	}
+
+	@media screen and (max-width: 480px) {
+	    .responsive-topbox-item-480 {
+		width: 100% !important;
+		min-width: 100% !important;
+	    }
+	    .mobile-hide-topbox-item-480 {
+		display: none !important;
+	    }
+	    .mobile-topbox-padding-0-480 {
+		padding: 0px !important;
+	    }
+	    .mobile-topbox-padding-5-480 {
+		padding: 5px !important;
+	    }
+	    .mobile-topbox-padding-10-480 {
+		padding: 10px !important;
+	    }
+	    .mobile-topbox-padding-15-480 {
+		padding: 15px !important;
+	    }
+	    .mobile-topbox-padding-20-480 {
+		padding: 20px !important;
+	    }
+	    .mobile-topbox-padding-5-top-item-480 {
+		padding: 5px 5px 3px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-top-item-480 {
+		padding: 10px 10px 5px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-top-item-480 {
+		padding: 15px 15px 8px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-top-item-480 {
+		padding: 20px 20px 10px 20px !important;
+	    }
+	    .mobile-topbox-padding-5-bottom-item-480 {
+		padding: 3px 5px 5px 5px !important;
+	    }
+	    .mobile-topbox-padding-10-bottom-item-480 {
+		padding: 5px 10px 10px 10px !important;
+	    }
+	    .mobile-topbox-padding-15-bottom-item-480 {
+		padding: 8px 15px 15px 15px !important;
+	    }
+	    .mobile-topbox-padding-20-bottom-item-480 {
+		padding: 10px 20px 20px 20px !important;
+	    }
+	    .mobile-hide {
+		display: none !important;
+	    }
+	    #mobile-hide {
+		display: none !important;
+	    }
+	    .headline {
+		font-size: 30px !important;
+		line-height: 36px !important;
+	    }
+	    .sup {
+		font-size: 18px !important;
+		line-height: 18px !important;
+	    }
+	    .logo {
+		width: 85px !important;
+		height: auto !important;
+	    }
+	    .bg {
+		padding-top: 30px !important;
+	    }
+		
+	}
+
+	/* ANDROID CENTER FIX */
+	div[style*="margin: 16px 0;"] { margin: 0 !important; }
+    </style></head><body style="padding:0">
+<!-- CONTAINER TABLE -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td align="center" bgcolor="#ffffff" style="padding: 5px 5% 50px 5%;">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td align="center" valign="top" width="100%">
+			<![endif]-->
+			<table border="0" cellpadding="0" cellspacing="0" style="max-width: 100%" width="100%"><tbody><tr><td>
+<div style="display: none; max-height: 0px; overflow: hidden;"></div>
+</td></tr><tr><td align="left" style="color: #000000; font-family: 'avenir', sans-serif;  font-size: 16px; line-height: 23px; padding: 10px 0 0 0;">
+<!--HEADER END --><p>
+	 I wanted to take a moment and bump this note from Mike when Tim first announced he was running for president. Some of you may have seen it already, but some of you are newer to the Team Ryan family.<br/><br/>
+	Mike is a close friend and confidant of Tim. I truly think his note will help you get to know my husband even better than before.<br/><br/>
+	Take a look below!<br/><br/>
+	Andrea<br/><br/>
+	P.S. We have a critical budget deadline on Friday and we’re trying to get at least 5,000 grassroots donations in before then. Can Tim count on you? <a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afbf/238141539/VEsH/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMTAifQ==/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=10&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=1+-+httpssecuretimryanforamericacommaydeadli&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1"><strong>https://secure.timryanforamerica.com/may-deadline</strong></a></p>
+<p>
+	---------- Forwarded message ---------<br/>
+	From: <strong>Mike Morley [via Tim Ryan HQ]</strong> (<a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afbe/238141539/VEsE/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMTAifQ==/" title="http://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=10&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=2+-+infotimryanforamericacom&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">info@timryanforamerica.com</a>)<br/>
+	Date: Sat, Apr 6,2019 at 11:17 AM<br/>
+	Subject: have we met?<br/>
+	To: Andrea Ryan</p>
+<p align="center">
+	<a href="#" target="_blank"><img alt="" src="http://d3fmzoduhotdlw.cloudfront.net/RyanT/EmailTemplate/TRLogoAB.png" style="padding-top:5px; padding-bottom:5px; max-width:50%" width="300"/></a></p>
+<p>
+	<span style="font-size: 18px;">Andrea, hi! I’m Mike. I’ve known Tim Ryan for years and I have to say: <strong>Tim is the leader we deserve.</strong><br/><br/><strong>His independent, compassionate and experienced approach is the course correction our country needs to get back on track. </strong></span></p>
+<p align="center">
+	<span style="color:#d7282f;"><strong style="text-align: -webkit-center; font-size: 18px;">Will you take a moment to join our campaign? We’re building a movement and we can’t do this without you:</strong></span><br style="font-size: 18px; text-align: -webkit-center;"/><br style="font-size: 18px; text-align: -webkit-center;"/><span style="font-size:18px;"><strong style="font-size: 18px; text-align: -webkit-center;"><span style="font-family: arial, sans-serif;"><a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa1/238141539/VEsF/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=3&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=3+-+Donate+ask+now&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">Donate $3 now</a></span></strong><br style="font-size: 18px; text-align: -webkit-center;"/><br style="font-size: 18px; text-align: -webkit-center;"/><strong style="font-size: 18px; text-align: -webkit-center;"><span style="font-family: arial, sans-serif;"><a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa0/238141539/VEsC/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiNSJ9/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=5&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=4+-+Donate+ask+now&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">Donate $5 now</a></span></strong><br style="font-size: 18px; text-align: -webkit-center;"/><br style="font-size: 18px; text-align: -webkit-center;"/><span style="text-align: -webkit-center; font-family: arial, sans-serif;"><strong><a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa3/238141539/VEsD/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMTAifQ==/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=10&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=5+-+Donate+ask+now&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">Donate $10 now</a></strong></span><br style="font-size: 18px; text-align: -webkit-center;"/><br style="font-size: 18px; text-align: -webkit-center;"/><span style="text-align: -webkit-center; font-family: arial, sans-serif;"><strong><a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa2/238141539/VEsA/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=3&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=6+-+Or+donate+another+amount&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">Or donate another amount</a></strong></span></span></p>
+<p>
+	<span style="font-size: 18px;">Failed leadership and broken promises from the White House have made things much worse for everyone -- from farmers in the Midwest to autoworkers here in the Rust Belt. </span><span style="font-size: 18px;">Two years ago, people who felt abandoned by Washington and overlooked by our government embraced a con artist who told them what they wanted to hear. But in the end, it was all talk.</span></p>
+<p>
+	<span style="font-size:18px;"><strong>Americans deserve a leader with the courage, bravery </strong></span><strong><span style="font-size:18px;">and</span></strong><span style="font-size:18px;"><strong> optimism this country was founded on. They deserve Tim Ryan. Please join our team today and let’s get this country back on track.</strong></span></p>
+<p align="center">
+	<strong><span style="font-size:18px;"><a class="Button" href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa5/238141539/VEsB/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=3&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=7+-+JOIN+THE+TEAM+CONTRIBUTE+TODAY+rarr&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">JOIN THE TEAM. CONTRIBUTE TODAY. →</a></span></strong></p>
+<p>
+	<span style="font-size:18px;">Here’s the bottom line: Hardworking American families have gone far too long without a seat at the table.<br/><br/>
+	No one understands the struggles of working America better than Tim because he’s been on the frontlines of the fight for affordable health care, quality public education and an economy that works for all of us for nearly two decades.<br/><br/>
+	Tim has the courage, the experience </span><span style="font-size:18px;">and</span><span style="font-size:18px;"> the pragmatism to propel America forward.<br/><br/><strong>He’s the leader we deserve. </strong><strong>Find out more about our campaign and join our team here: <a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa4/238141539/VEsO/p/eyJKU1ZHYVhKemRFNWhiV1VsSlE9PSI6IiIsIkpTVnNZWE4wYm1GdFpTVWwiOiIiLCJKU1ZCUkVSU01TVWwiOiIiLCJKU1ZCUkVSU01pVWwiOiIiLCJKU1ZsYldGcGJDVWwiOiJwb2xpdGljYWxuZXdzYm90MjAyMEBnbWFpbC5jb20iLCJKU1Y2YVhBbEpRPT0iOiIxMDAzMSIsIkpTVmphWFI1SlNVPSI6Ik5ldyBZb3JrIiwiSlNWemRHRjBaU1VsIjoiIiwiSlNWdlkyTjFjR0YwYVc5dUpTVT0iOiIiLCJKU1ZsYlhCc2IzbGxjaVVsIjoiIiwiZTN0aGMydDlmUT09IjoiMyJ9/" title="https://secure.actblue.com/donate/tr-may-deadline?refcode=TR_EM_FR_30O_190528_2_2_T1&amp;amount=3&amp;recurring=1&amp;firstname=&amp;lastname=&amp;addr1=&amp;addr2=&amp;email=****@****.****&amp;zip=10031&amp;city=New York&amp;state=&amp;occupation=&amp;employer=&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=8+-+httpssecuretimryanforamericacomlaunch&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">https://secure.timryanforamerica.com/launch</a></strong><br/><br/>
+	Let’s build a better America starting right now.<br/><br/>
+	Mike</span></p>
+<p>
+	<span style="font-size:10px;">--</span></p>
+<p>
+	<span style="font-size:10px;"><em>Team Ryan  |  <a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa7/238141539/VEsP/" title="https://secure.timryanforamerica.com/launch?utm_medium=email&amp;utm_source=timryan&amp;utm_content=9+-+TimRyanforAmericacom&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">TimRyanforAmerica.com</a></em></span></p><!--FOOTER -->
+
+					</td>
+				</tr></tbody></table><!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]--></td>
+	</tr><tr><td align="center" bgcolor="#021e2f" style="padding: 20px 5% 70px 5%; border-top: solid 2px #FFFFFF">
+			<!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td align="center" valign="top" width="100%">
+			<![endif]-->
+			<table border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;" width="100%"><tbody><!-- START ADDRESS --><tr><td align="center" style="font-size: 14px; line-height: 18px; color:#9e9e9e;  padding-top: 15px; padding-bottom: 25px; font-family: avenir, arial, sans-serif;" valign="middle"><img arial="" avenir="" font-family:="" font-size:="" sans-serif="" src="https://nbicdn.s3.amazonaws.com/RyanT/EmailTemplate/FooterIcons.png" style="max-width:600px;&gt;&lt;span style=" width="100%"/></td>
+				</tr><!--  END ADDRESS --><!--  START PAID FOR --><tr><td align="center">
+						<div style="font-family: avenir, arial, sans-serif; border-color: #e4e9ee; border-style: solid; border-width: 1px; padding: 7px; width:90%; max-width:600px; font-size: 14px; line-height: 18px; color:#ffffff; font-family: avenir,    arial, sans-serif;">
+							<span style="font-family: avenir, arial, sans-serif; font-size: 14px;">Paid for by Tim Ryan for America</span>
+						</div>
+					</td>
+				</tr><!-- END PAID FOR --><!-- START BOTTOM TEXT --><tr><td align="center" style="font-size: 14px; line-height: 18px; color:#9e9e9e; padding-top: 25px; font-family: avenir, arial, sans-serif;">	 
+						<div style="width:100%; max-width:600px;" width="600"><span style="font-size: 12px; line-height: 125%; color: #000000; font-family: 'avenir', arial, sans-serif;"> <span style="color:#ffffff;"> To qualify for the first presidential debate, <br/>
+Tim needs to prove he has the support of 65,000 individuals from over 20 states. <br/>
+Help him take his vision for our future to the mainstage by <a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa6/238141539/VEsHBQ/" style="color:#ffffff; font-family: avenir,verdana,sans-serif;" title="https://secure.actblue.com/donate/tr-emfooter?amount=5&amp;utm_medium=email&amp;utm_source=timryan&amp;utm_content=10+-+contributing+right+now&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1"><strong>contributing right now.</strong></a><br/><br/><b>We know email can be overwhelming, </b><br/>
+so if you’d like to receive only the most important updates, 
+you can join our email-lite list <a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa9/238141539/VEsHBA/" style="color:#ffffff; font-family: avenir,   arial, sans-serif;" title="https://timryan.cp.bsd.net/page/s/receive-fewer-emails?utm_medium=email&amp;utm_source=timryan&amp;utm_content=11+-+here&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1">here</a>, or if unsubscribe from all email by <a href="http://secure.timryanforamerica.com/page/m/d7a9e59/548afc14/2711afd1/dc9afa8/238141539/VEsHBw/p/eyJKU1ZQUWtaVlUwTkJWRVZFVWtWRFNWQkpSVTVVU1VRbEpRPT0iOiIyNzExYWZkMSIsIkpTVlBRa1pWVTBOQlZFVkVUVUZKVEVsT1IxTkZUa1JKUkNVbCI6ImQ3YTllNTkifQ==/" style="color:#ffffff; font-family: avenir,verdana,sans-serif;" title="https://secure.timryanforamerica.com/page/oneclickunsubscribe/2711afd1/d7a9e59?utm_medium=email&amp;utm_source=timryan&amp;utm_content=12+-++clicking+here&amp;utm_campaign=TR_EM_FR_ACT_190528_2_2_T1&amp;source=TR_EM_FR_ACT_190528_2_2_T1"> clicking here.</a><br/><br/><!-- CADILLAC BUTTON GROUP START --><center>
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="responsive-table" style="max-width: 100%;" width="600"><tbody><tr><td align="center" style="padding: 5px;"><!-- START  BUTTON -->
+<table border="0" cellpadding="0" cellspacing="0" width="210"><tbody><tr><td></td>
+</tr></tbody></table><!-- END BUTTON --></td>
+</tr></tbody></table></center></span></span></div>
+					</td>
+				</tr><!-- END BOTTOM TEXT --></tbody></table><!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]--></td>
+	</tr></tbody></table><img height="1" src="http://secure.timryanforamerica.com/page/o/d7a9e59/548afc14/2711afd1/dc9afbc/238141539/open.gif" width="1"/>
+
+
+
+</body></html><!--FOOTER END -->
