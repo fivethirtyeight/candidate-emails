@@ -1,6 +1,6 @@
 # candidate-emails
 
-This repository contains the data behind the story [TKTK]().
+This repository contains the data behind the story [Which Democrats Are Campaigning On Trump?](https://fivethirtyeight.com/features/which-democrats-are-campaigning-on-trump).
 
 We've subscribed to the email lists for every 2020 Democratic campaign that FiveThirtyEight [considered "major"](https://fivethirtyeight.com/features/heres-how-were-defining-a-major-presidential-candidate/) in the month before the first night of the first Democratic debate (June 26) using the ZIP code of FiveThirtyEight's New York City office, meaning we may not be getting the same amount — or type — of emails as some other subscribers because campaigns can target emails to specific groups of people. To protect our email address from spam, any reference to it has been replaced with `****@****.****`.
 
