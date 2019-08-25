@@ -12,7 +12,7 @@ Column | Description
 -------|---------------
 `candidate` | Name of candidate
 `message_id` | Unique identifier for each email
-`message_date` | [Date and time](https://developers.google.com/gmail/api/v1/reference/users/messages#internalDate) at which the message was recieved
+`message_date` | [Date and time](https://developers.google.com/gmail/api/v1/reference/users/messages#internalDate) at which the message was received
 `message_from` | Sender, email's `From` header
 `message_subject` | Subject, email's `Subject` header
 `filepath` | Path of the file in this repository containing the HTML body of the email
